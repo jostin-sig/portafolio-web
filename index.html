@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jostin | Portafolio Personal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #0b1120;
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #111c32;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .logo {
+      color: #38bdf8;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(135deg, #111c32, #172e56);
+    }
+
+    .hero h1 {
+      font-size: clamp(32px, 6vw, 52px);
+      color: white;
+    }
+
+    .hero span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: 20px auto;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0284c7;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background: #0369a1;
+    }
+
+    section {
+      padding: 70px 10%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #38bdf8;
+      margin-bottom: 25px;
+      font-size: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid #334155;
+    }
+
+    .card h3 {
+      color: #7dd3fc;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      text-align: center;
+      background: #111c32;
+      padding: 25px;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        justify-content: center;
+        text-align: center;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      section {
+        padding: 50px 6%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Jostin.dev</div>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <div class="hero" id="inicio">
+    <h1>¡Hola! Soy <span>Jostin</span> 👋</h1>
+    <h3>Estudiante de Ingeniería en Software</h3>
+    <p>
+      Apasionado por la programación, el desarrollo web
+      y la creación de soluciones tecnológicas.
+    </p>
+    <a class="btn" href="#proyectos">Ver mis proyectos</a>
+  </div>
+
+  <section id="sobre-mi">
+    <h2>👨‍💻 Sobre mí</h2>
+    <p>
+      Soy estudiante de Ingeniería en Software en la
+      Universidad Técnica de Ambato, Ecuador.
+      Me interesa el desarrollo de aplicaciones,
+      las bases de datos, las redes y las nuevas tecnologías.
+      Mi objetivo es seguir aprendiendo y convertirme
+      en un ingeniero de software profesional.
+    </p>
+  </section>
+
+  <section id="habilidades">
+    <h2>🛠️ Mis habilidades</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Lenguajes</h3>
+        <p>C++, Java, C#, Python y JavaScript.</p>
+      </div>
+
+      <div class="card">
+        <h3>Desarrollo web</h3>
+        <p>HTML, CSS, JavaScript y Bootstrap.</p>
+      </div>
+
+      <div class="card">
+        <h3>Bases de datos</h3>
+        <p>PostgreSQL, MySQL y SQL Server.</p>
+      </div>
+
+      <div class="card">
+        <h3>Herramientas</h3>
+        <p>Git, GitHub, VS Code, NetBeans y Postman.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="proyectos">
+    <h2> Mis proyectos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Registro de calificaciones</h3>
+        <p>
+          Aplicación académica desarrollada en C++
+          para gestionar calificaciones de estudiantes.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Árboles binarios</h3>
+        <p>
+          Implementación de estructuras de datos
+          y recorridos de árboles utilizando Java y C++.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Simulador de créditos</h3>
+        <p>
+          Sistema basado en microservicios con .NET,
+          SQL Server y métodos de amortización.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Redes de computadoras</h3>
+        <p>
+          Configuración de redes, VLAN y simulaciones
+          utilizando Cisco Packet Tracer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2> Contacto</h2>
+    <p>
+      Puedes conocer mis repositorios y proyectos
+      a través de mi perfil de GitHub.
+    </p>
+    <a class="btn"
+       href="https://github.com/jostin-sig"
+       target="_blank"
+       rel="noopener noreferrer">
+      Visitar mi GitHub
+    </a>
+  </section>
+
+  <footer>
+    <p>© 2026 Jostin | Portafolio Personal</p>
+    <p>Universidad Técnica de Ambato - Ecuador</p>
+  </footer>
+
+</body>
+</html>
